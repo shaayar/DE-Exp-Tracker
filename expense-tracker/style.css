@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  #login-container, #expense-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #expense-list {
+    margin-top: 20px;
+  }
+  
+  #expense-list div {
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  #logout-btn {
+    background-color: #f44336;
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+      height: auto;
+    }
+    
+    #login-container, #expense-container {
+      padding: 15px;
+      max-width: 100%;
+    }
+    
+    button {
+      width: 100%;
+      margin: 10px 0;
+    }
+    
+    #expense-list div {
+      font-size: 14px;
+      padding: 6px;
+    }
+  }
+  
